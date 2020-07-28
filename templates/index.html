@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}To-do{% endblock %}
+{% block content %}
+	<form class="input-group" action="/" method="POST">
+		<input type="text" class="form-control" placeholder="add to tasks" name="taskadd">
+	    <div class="input-group-append">
+	      <button class="btn btn-danger" type="submit">
+	        <i class="fa fa-plus"></i> ADD
+	      </button>
+		</div>
+	</form>
+	<hr style="border-top: 1px solid #f70d1a;">
+	<div>
+	 	<h1 class="title">
+	  		<i class="fa fa-check-square"></i> To-do
+	  	</h1>
+	</div>
+	<hr style="border-top: 1px solid #f70d1a;">
+	{% for todo in todos %}
+	<div class="row tasks">
+	  	<div class="col-md-7"><h3><i class="fa fa-chevron-circle-right"></i> {{ todo.content }}</h3></div>
+	  	<div class="col-md-3"><h3><i class="fa fa-calendar"></i> {{ todo.date_created.date()}}</h3></div>
+	  	<div class="col-md-1"><a href="/editTask/{{todo.id}}"><h3><i class="fa fa-edit"></i></h3></a></div>
+	  	<div class="col-md-1"><a href="/deleteTask/{{todo.id}}"><h3><i class="fa fa-trash"></i></h3></a></div>
+	</div>
+	<hr style="border-top: 1px solid #ecf0f1;">
+	{% endfor %}
+{% endblock %}

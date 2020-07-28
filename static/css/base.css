@@ -1,0 +1,58 @@
+@font-face {
+  font-family: designblock;
+  src: url("../fonts/designblock.TTF");
+}
+body{
+  background-image: url('../img/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+}
+.logo{
+	margin-left: 37%;
+}
+.todonavbar{
+	background-color: rgba(255, 204, 203, 0.2);
+	font-family: designblock;
+	font-size: 30px;
+	text-shadow: 0px 0px 3px #f70d1a;
+}
+.maincontent{
+	margin-top: 3%;
+	padding: 3%;
+	background-color: rgba(231, 76, 60,0.3);
+}
+.title{
+	color: #ecf0f1;
+	font-family: designblock;
+	text-shadow: 1px 1px 1px #f70d1a;
+}
+.tasks{
+	color: #ecf0f1;
+}
+.tasks a{
+	color: #ecf0f1;
+	text-shadow: 1px 1px 1px #c0392b;
+}
+.tasks a:hover{
+	color: #c0392b;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #ecf0f1;
+}
+.input-group{
+	font-size: 25px;
+}
+h4{
+	color: #ecf0f1;
+}
+h4 a{
+	color: #ecf0f1;
+	text-shadow: 1px 1px 1px #c0392b;
+}
+h4 a:hover{
+	color: #c0392b;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #ecf0f1;
+}
